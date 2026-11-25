@@ -1,0 +1,8 @@
+[
+  {
+    "id": "subway-surfers",
+    "title": "Subway Surfers",
+    "script": "https://jasongamesdev.github.io/subway-surfers/unity.js",
+    "featured": true
+  }
+]

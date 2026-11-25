@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <title>Classroom 15x</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="top-banner">
+    Hey everyone! Remember to save all the fun and games for your breaks or after school. School time is for learning, so let's focus on that first! 📚
+  </div>
+
+  <div class="sidebar-backdrop" id="sidebar-backdrop"></div>
+
+  <div class="layout">
+    <aside class="sidebar" id="sidebar">
+      <div class="sidebar-header">
+        <h1 class="brand-title">Classroom<br />15x</h1>
+      </div>
+
+      <nav class="sidebar-nav">
+        <a href="#home" class="nav-link active" id="nav-home">Home</a>
+        <a href="#contact" class="nav-link" id="nav-contact">Contact Us</a>
+
+        <button class="directory-toggle" id="directory-toggle" aria-expanded="true">
+          <span class="chevron" id="directory-chevron">⌄</span>
+          <span>Game Directory</span>
+        </button>
+
+        <ul class="game-list" id="game-list"></ul>
+      </nav>
+    </aside>
+
+    <main class="main-content">
+      <div class="content-topbar">
+        <button class="mobile-menu-btn" id="mobile-menu-btn" aria-label="Toggle Menu">☰ Games</button>
+
+        <div class="search-wrapper">
+          <input
+            type="text"
+            id="search-input"
+            class="search-input"
+            placeholder="Search games..."
+            aria-label="Search games"
+          />
+          <button class="search-btn" id="search-btn" aria-label="Search">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="11" cy="11" r="8"></circle>
+              <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+            </svg>
+          </button>
+        </div>
+      </div>
+
+      <div class="page-container" id="home-view">
+        <section class="hero-section" id="hero-section">
+          <h2 class="hero-title">Classroom 15x: Unblocked Chromebook Games for Fun and Learning</h2>
+          <p class="hero-subtitle">
+            Looking for a quick break that's both enjoyable and meaningful?
+            <span class="highlight">Classroom 15x</span> offers a curated selection of browser-based games
+            that you can play instantly. No installations required and no distractions. Each game is designed to
+            run smoothly on Chromebooks, iPads, and school networks, making it ideal for short study breaks.
+          </p>
+          <hr class="hero-divider" />
+        </section>
+
+        <section class="player-card" id="player-card">
+          <div class="player-header">
+            <div class="player-label" id="player-label">QUICK GAME OF THE DAY 🎮</div>
+            <div class="player-actions">
+              <span class="player-game-name" id="player-game-name">NO GAME SELECTED</span>
+              <button class="fullscreen-btn" id="fullscreen-btn" title="Fullscreen">⛶</button>
+            </div>
+          </div>
+
+          <div class="iframe-container" id="iframe-container">
+            <iframe id="game-frame" title="Game Player" allowfullscreen></iframe>
+          </div>
+        </section>
+      </div>
+
+      <div class="page-container hidden" id="contact-view">
+        <section class="hero-section">
+          <h2 class="hero-title">Contact Us</h2>
+          <p class="hero-subtitle">
+            Have a game request or found a broken link? Reach out to your site administrator or add a new entry directly inside <code>games.json</code>.
+          </p>
+          <hr class="hero-divider" />
+          <div class="contact-box">
+            <p><strong>Email:</strong> admin@classroom15x.example</p>
+            <p><strong>Tip:</strong> All games are intended for break times and after-school play.</p>
+          </div>
+        </section>
+      </div>
+    </main>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
